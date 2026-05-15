@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Designer Deal Finder</title>
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<nav>
+  <h2>Designer Deals</h2>
+
+  <div>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/search">Search</a>
+    <a href="/deals">Deals</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1>Find Luxury Fashion Deals</h1>
+
+  <div class="search-bar">
+    <input type="text" id="brandInput" placeholder="Search designer brand">
+
+    <select id="categoryInput">
+      <option>Shoes</option>
+      <option>Bags</option>
+      <option>Jackets</option>
+      <option>Shirts</option>
+    </select>
+
+    <button onclick="goSearch()">Search</button>
+  </div>
+</section>
+
+<section>
+  <h2 style="padding-left:40px">Featured Products</h2>
+
+  <div class="products" id="featuredProducts"></div>
+</section>
+
+<script src="/js/home.js"></script>
+
+</body>
+</html>

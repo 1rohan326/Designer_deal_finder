@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", Arial, sans-serif;
+  }
+  
+  body {
+    background: #0f0f10;
+    color: #f5f5f5;
+    line-height: 1.6;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 40px;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #222;
+  }
+  
+  nav h2 {
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #fff;
+  }
+  
+  nav a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 90px 20px;
+    background: radial-gradient(circle at top, #1a1a1a, #0f0f10);
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    color: #aaa;
+    margin-top: 10px;
+  }
+
+  .search-bar {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .search-bar input,
+  .search-bar select {
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 220px;
+    background: #1c1c1c;
+    color: #fff;
+  }
+  
+  .search-bar button {
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: none;
+    background: #e11d48;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .search-bar button:hover {
+    background: #be123c;
+    transform: scale(1.05);
+  }
+  
+  .products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    padding: 40px;
+  }
+  
+  .card {
+    background: #18181b;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: 0.3s;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  }
+  
+  .card:hover {
+    transform: translateY(-6px);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 260px;
+    object-fit: contain;
+    background: #fff;
+    padding: 10px;
+  }
+  
+  .card h3 {
+    font-size: 16px;
+    padding: 10px;
+  }
+  
+  .card p {
+    padding: 0 10px 10px;
+    color: #bbb;
+  }
+  
+  .card button {
+    width: 90%;
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .card button:hover {
+    background: #1d4ed8;
+  }
+  
+  .about {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #18181b;
+    border-radius: 16px;
+  }
+  
+  .product-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 60px;
+    justify-content: center;
+  }
+  
+  .product-details img {
+    width: 350px;
+    border-radius: 12px;
+    background: white;
+    padding: 10px;
+  }
+  
+  .product-details div {
+    max-width: 500px;
+  }
+  
+  .deal-badge {
+    display: inline-block;
+    background: #16a34a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 999px;
+    font-size: 12px;
+    margin: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .search-bar {
+      flex-direction: column;
+    }
+  
+    .product-details {
+      padding: 20px;
+    }
+  }
